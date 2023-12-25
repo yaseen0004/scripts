@@ -1,0 +1,1 @@
+psql -l | grep muya | cut -d '|' -f1 | while read x; do dropdb $x; done;
